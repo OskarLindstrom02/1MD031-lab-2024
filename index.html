@@ -1,1 +1,99 @@
-Hello world
+<!DOCTYPE HTML>
+<html lang="en">
+   <head>
+       <title>BurgerPub</title>
+       <meta charset="utf-8"/>
+   </head>
+<body>
+<header>
+    <h1>Welcome to BurgerHeaven Online</h1>
+</header>
+<main>
+    <section>
+    <h2>Select burger</h2>
+    <p>This is where you execute burger selection</p>
+    <div style="display: inline-block">
+    <h3>The Fire Burger</h3>
+    <!-- Lägg din bildlänk här -->
+    <img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqv7uAnbpghePolgd43TBGrz_vrbrbxcBkbrT9aBcfSG_1wx5IvvJ4nLJHouojCzh0OX8&usqp=CAU alt="The Fire Burger" width="300" height="300">
+    <ul>
+    <li>Contains gluten</li>
+    <li>Contains dairy</li>
+    <li>Contains meat</li>
+</ul>
+</div>
+<div style="display: inline-block">
+    <h3>The Lettuce Burger</h3>
+    <!-- Lägg din bildlänk här -->
+    <img src=https://maldonsalt.com/wp-content/uploads/2023/05/Lettuce-Wrap.png alt="The Lettuce Burger" width="300" height="300">
+    <ul>
+    <li>Contains dairy</li>
+    <li>Contains meat</li>
+</ul>
+</div>
+<div style="display: inline-block">
+    <h3>The Halloumi Burger</h3>
+    <!-- Lägg din bildlänk här -->
+    <img src=https://images.ctfassets.net/izjiv8mj8dix/4gFgZ4bRNywbZ4qQqBwQSL/04be19a640fffbfb74af916962cf3623/Halloumi_Burger_with_Chilli_and_Mint.jpg?w=2669&h=2000&fl=progressive&q=80&fm=jpg alt="The Halloumi Burger" width="300" height="300">
+    <ul>
+    <li>Contains gluten</li>
+    <li>Contains dairy</li>
+</ul>
+</div>
+</section>
+    
+    <h2>Customer information</h2>
+    <section>
+    <p>This is where you provide necessary information</p>
+    
+ <h3>Delivery information:</h3>
+    
+    <form>
+        <p>
+            <label for="name">Full name</label><br>
+            <input type="text" id="name" name="name" required placeholder="First- and Last name">
+        </p>
+        <p>
+            <label for="email">E-mail</label><br>
+            <input type="email" id="email" name="email" required placeholder="E-mail address">
+        </p>
+        <p>
+            <label for="street">Street</label><br>
+            <input type="text" id="street" name="street" required placeholder="Street name">
+        </p>
+        <p>
+            <label for="housenumber">House</label><br>
+            <input type="number" id="housenumber" name="housenumber" required placeholder="House number">
+        </p>
+        <p>
+    <label>Gender:</label><br>
+    <input type="radio" id="male" name="gender" value="male" checked>
+    <label for="male">Male</label><br>
+    
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label><br>
+    
+    <input type="radio" id="no-gender" name="gender" value="no-gender">
+    <label for="no-gender">Do not wish to provide</label>
+</p>
+    <p>
+   <label for="payment method">Payment method</label><br>
+   <select id="payment method" name="pym">
+       <option selected="selected">Card</option>
+       <option>Klarna</option>
+       <option>Pay at pickup</option>
+       <option>Apple pay</option>
+   </select>
+</p>
+</form>
+    </section>
+    <button type="submit">
+  <img src=https://img.myloview.se/fototapeter/check-icon-vector-check-mark-icon-check-list-button-icon-700-194930748.jpg alt="Submit" width="20" height="20">
+  Place order
+</button>
+</main>
+<footer>
+    <p>Copyright BurgerHeaven Online 2025</p>
+</footer>
+</body>
+</html>
