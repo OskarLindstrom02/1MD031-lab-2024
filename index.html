@@ -1,46 +1,51 @@
 <!DOCTYPE HTML>
 <html lang="en">
-   <head>
+   <head >
        <title>BurgerPub</title>
        <meta charset="utf-8"/>
+       <link rel="stylesheet" type="text/css" href="./public/css/style.css">
    </head>
 <body>
 <header>
+    <img src="https://t4.ftcdn.net/jpg/07/78/23/41/360_F_778234167_Wcm57Vq9GivIZLW5Qd3p2OUBQ0JGOXS1.jpg">
     <h1>Welcome to BurgerHeaven Online</h1>
 </header>
 <main>
-    <section>
+    <section id="burger-selection">
     <h2>Select burger</h2>
     <p>This is where you execute burger selection</p>
-    <div style="display: inline-block">
+    <div class = "burger-wrapper">
+    <div class="burger">
     <h3>The Fire Burger</h3>
     <img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqv7uAnbpghePolgd43TBGrz_vrbrbxcBkbrT9aBcfSG_1wx5IvvJ4nLJHouojCzh0OX8&usqp=CAU alt="The Fire Burger" width="300" height="300">
     <ul>
-    <li>Contains gluten</li>
-    <li>Contains dairy</li>
-    <li>Contains meat</li>
+    <li>Contains <span class="allergen">gluten</span></li>
+    <li>Contains <span class="allergen">dairy</span></li>
+    <li>Contains <span class="allergen">meat</span></li>
 </ul>
 </div>
-<div style="display: inline-block">
+    <div class="burger">
     <h3>The Lettuce Burger</h3>
     <img src=https://maldonsalt.com/wp-content/uploads/2023/05/Lettuce-Wrap.png alt="The Lettuce Burger" width="300" height="300">
     <ul>
-    <li>Contains dairy</li>
-    <li>Contains meat</li>
+    <li>Contains <span class="allergen">dairy</span></li>
+    <li>Contains <span class="allergen">meat</span></li>
 </ul>
 </div>
-<div style="display: inline-block">
+    <div class="burger">
     <h3>The Halloumi Burger</h3>
     <img src=https://images.ctfassets.net/izjiv8mj8dix/4gFgZ4bRNywbZ4qQqBwQSL/04be19a640fffbfb74af916962cf3623/Halloumi_Burger_with_Chilli_and_Mint.jpg?w=2669&h=2000&fl=progressive&q=80&fm=jpg alt="The Halloumi Burger" width="300" height="300">
     <ul>
-    <li>Contains gluten</li>
-    <li>Contains dairy</li>
-</ul>
+    <li>Contains <span class="allergen">gluten</span></li>
+    <li>Contains <span class="allergen">dairy</span></li>
+        </ul>
+    </div>
 </div>
+
 </section>
     
-    <h2>Customer information</h2>
-    <section>
+    <section id ="customer-information">
+        <h2>Customer information</h2>
     <p>This is where you provide necessary information</p>
     
  <h3>Delivery information:</h3>
