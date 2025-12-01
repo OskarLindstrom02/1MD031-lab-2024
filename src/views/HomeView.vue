@@ -69,8 +69,6 @@
               value="no-gender"
             />
             <label for="no-gender">Do not wish to provide</label>
-            {{ gender }}
-            <!-- Lägg till detta för att testa -->
           </p>
           <p>
             <label for="payment">Payment method</label><br />
@@ -136,7 +134,6 @@ function Menultem(name, url, kCal, hasGluten, hasLactose) {
   this.lactose = hasLactose;
 }
 
-// 2. Create array of burgers (using const since we won't redefine the array)
 const burgers = [
   new Menultem(
     "Double burger",
@@ -235,8 +232,6 @@ export default {
         x: event.currentTarget.getBoundingClientRect().left,
         y: event.currentTarget.getBoundingClientRect().top,
       };
-
-      // Samma beräkning som i addOrder, men bara spara location
       this.location.x = event.clientX - 10 - offset.x;
       this.location.y = event.clientY - 10 - offset.y;
 
@@ -296,13 +291,6 @@ nav ul {
 main {
   background-color: bisque;
 }
-
-/* nav ul li {
-    display: inline-block;
-    background-color: grey;
-    padding: 1em;
-    margin: 1em;
-} */
 
 header h1 {
   width: 40rem;
@@ -378,18 +366,18 @@ header img {
 
 header h1 {
   position: absolute;
-  top: 50%; /* Centrera vertikalt */
-  left: 50%; /* Centrera horisontellt */
-  transform: translate(-50%, -50%); /* Justera för exakt centrering */
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
   margin: 0; /* Ta bort negativ margin */
   padding: 20px;
-  color: white; /* Lägg till vit färg så den syns */
+  color: white; 
   text-align: center;
-  width: 100%; /* Se till att den tar hela bredden */
+  width: 100%; 
 }
 .burger-wrapper {
   display: grid;
   grid-gap: 5px;
-  grid-template-columns: 1fr 1fr 1fr; /* 3 kolumner, samma storlek */
+  grid-template-columns: 1fr 1fr 1fr; 
 }
 </style>
